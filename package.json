@@ -1,0 +1,16 @@
+{
+  "name": "ornikar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test:assuranceAuto": "playwright test src/tests/assuranceAuto.spec.ts --config=playwright.config.ts --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  }
+}

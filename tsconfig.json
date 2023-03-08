@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ES6",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["test", "src", "loglevel.d.ts"],
+  "typedocOptions": {
+    "entryPointStrategy": "expand",
+    "entryPoints": ["src/common", "src/pages"],
+    "out": "docs",
+    "theme": "default"
+  }
+}

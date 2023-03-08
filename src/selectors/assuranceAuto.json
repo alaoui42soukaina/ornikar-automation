@@ -1,0 +1,4 @@
+{
+  "pageTitle": "//h1[contains(text(),'assurance auto')]",
+  "tenezMoiAuCourant" : "//div[@role='button']//span[contains(text(),'Oui tenez-moi au courant')]"
+}
