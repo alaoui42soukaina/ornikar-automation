@@ -62,25 +62,6 @@ export class BasePage {
 
 
     /**
-     * Waits for the element to be visible, then get the value of the specified attribute on the element
-     * @param selector - Element's selector
-     * @param attribute - Name of the attribute whose value you want to get
-     * @returns Value of a specified attribute on the element
-     */
-    protected async getAttribute(
-        selector: string,
-        attribute: string
-    ): Promise<string> {
-        await this.page.waitForSelector(selector);
-        const text: string = await this.page.$eval(
-            selector,
-            (element, attr: string) => element.getAttribute(attr),
-            attribute
-        );
-        return text.trim();
-    }
-
-    /**
      * Waits until the HTML is fully rendered for the current page
      * @param timeout - Maximum wait time in milliseconds, defaults to 40 seconds
      */

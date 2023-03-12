@@ -1,9 +1,6 @@
 import * as selectors from '../selectors/cookies.json';
 import { Page } from "@playwright/test";
 import { BasePage } from "../common/BasePage";
-import {expectEquals} from "../common/CommonFunctions";
-import log from "loglevel";
-let step = ""
 
 export default class cookies extends BasePage {
     constructor(page: Page) {

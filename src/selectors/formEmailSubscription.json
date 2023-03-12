@@ -1,8 +1,0 @@
-{
-  "popUp" : "//iframe[contains(@src,'form')]",
-  "dateQuestion" : "//span[contains(@id,'date')]",
-  "inputJour": "//input[@data-qa='date-input-day']",
-  "inputMois" : "//input[@data-qa='date-input-month']",
-  "inputAnnee" : "//input[@data-qa='date-input-year']",
-  "buttonOK" : "//input[@data-qa='ok-button-visible deep-purple-ok-button-visible']"
-}

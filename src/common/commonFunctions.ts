@@ -34,7 +34,7 @@ export function pushTestResults(testInfo: TestInfo){
  * @param {reportMsg: string; testState: string} result The error messages and testState (failed or passed)
  * @param verificationTitle The title of the verification step
  */
-export function expectEquals(expectedData : any, realData : any, result: {reportMsg: string; testState: string}, verificationTitle?:string) {
+export function expectEquals(expectedData : any, realData : any, result: resultType, verificationTitle?:string) {
     try {
         expect(expectedData).equals(realData);
     } catch (Error) {
@@ -42,30 +42,6 @@ export function expectEquals(expectedData : any, realData : any, result: {report
         result.reportMsg = result.reportMsg + '\n' + "Expected Data : '" + expectedData + "', Observed data : '" + realData + "'" + '\n';
         result.testState = "failed";
     }
-
-    return result
-}
-
-
-/**
- * Compares a value that should contain another and logs the error message and the failed test state if the verification fails.
- * @param expectedData  The data we expect to find
- * @param realData  The data to be verified
- * @param {reportMsg: string; testState: string} result The error messages and testState (failed or passed)
- */
-export function expectContains(expectedData : any, realData : any, result: {reportMsg: string; testState: string}, errorTitle?:string ) {
-    try {
-        expect(realData).contains(expectedData);
-    } catch (Error) {
-        if (errorTitle) {
-            errorTitle = errorTitle + '\n'
-        } else {
-            errorTitle = ""
-        }
-        result.reportMsg = result.reportMsg  + '\n' + errorTitle + "Expected '" + expectedData + "' to contain '" + realData + "'";
-        result.testState = "failed";
-    }
-    ;
 
     return result
 }

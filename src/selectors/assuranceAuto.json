@@ -1,4 +1,12 @@
 {
   "pageTitle": "//h1[contains(text(),'assurance auto')]",
-  "tenezMoiAuCourant" : "//div[@role='button']//span[contains(text(),'Oui tenez-moi au courant')]"
+  "logo" : "//a[@data-testid='go-to-home']",
+  "code" : "//a[@data-testid='go-to-theory']",
+  "permisMenu" : "//div[@data-testid='open-menu-permis-de-conduire']",
+  "permisB" : "//a[@data-testid='go-to-permis-b']",
+  "conduiteAccompagnee" : "//a[@data-testid='go-to-conduite-accompagnee']",
+  "conduiteALaCarte" : "//a[@data-testid='go-to-conduite-a-la-carte']",
+  "financementCPF" : "//a[@data-testid='go-to-financement-cpf']",
+  "assurance" : "//a[@data-testid='go-to-insurance']",
+  "connexion" : "//div[@data-testid='connection-button']"
 }
