@@ -27,7 +27,6 @@ export function pushTestResults(testInfo: TestInfo){
     testInfo.annotations.push({type : 'Message', description :result.reportMsg});
 }
 
-
 /**
  * Compares a value that should equal another and logs the error message and the failed test state if the comparison fails.
  * @param expectedData  The data we expect to find
@@ -70,3 +69,4 @@ export function expectContains(expectedData : any, realData : any, result: {repo
 
     return result
 }
+

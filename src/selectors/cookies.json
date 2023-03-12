@@ -1,0 +1,4 @@
+{
+  "cookiesPage": "//div[@data-service='cookies']",
+  "continuerSansAccepter": "//div[@role='button']/span[contains(text(),'Continuer sans accepter')]"
+}

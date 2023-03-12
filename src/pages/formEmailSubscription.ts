@@ -20,9 +20,12 @@ export default class formEmailSubscription extends BasePage {
     }
 
     public async inputInsuranceDate(jour:number, mois:number, annee:number): Promise<void> {
-        await this.page.type(selectors.inputJour,jour.toString())
-        await this.page.type(selectors.inputMois,mois.toString())
-        await this.page.type(selectors.inputAnnee,annee.toString())
+        //Print Popup Content
+        console.log('textContent: ' + await this.page.locator('div.tf-v1-iframe-wrapper').textContent())
+        await this.page.waitForSelector(selectors.inputJour);
+        await this.page.fill(selectors.inputJour,jour.toString())
+        await this.page.fill(selectors.inputMois,mois.toString())
+        await this.page.fill(selectors.inputAnnee,annee.toString())
     }
 
 

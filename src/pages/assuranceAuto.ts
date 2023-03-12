@@ -20,6 +20,7 @@ export default class assuranceAuto extends BasePage {
     }
 
     public async clickSubcribeEmail(): Promise<void> {
+        await this.page.waitForSelector(selectors.tenezMoiAuCourant)
         await this.page.click(selectors.tenezMoiAuCourant);
         await this.waitTillHTMLRendered();
     }
